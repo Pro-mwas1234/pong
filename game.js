@@ -115,8 +115,8 @@ function update() {
         let collidePoint = (ballY + BALL_SIZE / 2) - (rightPaddleY + PADDLE_HEIGHT / 2);
         collidePoint = collidePoint / (PADDLE_HEIGHT / 2);
         let angle = collidePoint * (Math.PI / 4);
-        ballVelY = BALL_SPEED * Math.sin(angle);
-        ballVelX = BALL_SPEED * Math.cos(angle); // Ensure ball goes left
+        ballVelX = BALL_SPEED * Math.sin(angle);
+        ballVelY = BALL_SPEED * Math.cos(angle); // Ensure ball goes left
     }
 
     // Score
